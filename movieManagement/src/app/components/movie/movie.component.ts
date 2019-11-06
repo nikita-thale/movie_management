@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import { TableModule } from "primeng/table";
 import { Movies } from "./movies";
 import { MovieService } from "./movie.service";
 

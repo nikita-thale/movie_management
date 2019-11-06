@@ -1,44 +1,45 @@
-<p-dialog [(visible)]="display" modal="modal" (onHide)="onClose()" showEffect="fade">
+<p-dialog [(visible)]="display" header="Details" modal="modal" width="500" (onHide)="onClose()" showEffect="fade">
   <div class="ui-lg ui-fluid">
-    <div class="ui-lg-12 ui-md-4">
-      <div class="form-group">
-        <label class="ui-lg-6 ui-md-2">Title</label>
-        <input type="text" class="form-control" [value]="list?.title" disabled>
+    <div class="form-group">
+      <div class="ui-g">
+        <label class="ui-g-4">Title</label>
+        <input type="text" class="ui-g-4" [value]="list?.title" disabled>
       </div>
     </div>
 
-    <div class="ui-lg-12 ui-md-4">
-      <div class="form-group">
-        <label class="ui-lg-6 ui-md-2">Director's Name</label>
-        <input type="text" class="form-control" [value]="list?.director" disabled>
+    <div class="form-group">
+      <div class="ui-g">
+        <label class="ui-g-4">Director's Name</label>
+        <input type="text" class="ui-g-4" [value]="list?.director" disabled>
       </div>
     </div>
 
-    <div class="ui-lg-12 ui-md-4">
-      <div class="form-group">
-        <label class="ui-lg-6 ui-md-2">Summary</label>
-        <textarea [rows]="5" [cols]="30" pInputTextarea autoResize="autoResize" [value]="list?.description" disabled></textarea>
+    <div class="form-group">
+      <div class="ui-g">
+        <label class="ui-g-4">Producer's Name</label>
+        <input type="text" class="ui-g-4" [value]="list?.producer" disabled>
       </div>
     </div>
 
-    <div class="ui-lg-12 ui-md-4">
-      <div class="form-group">
-        <label class="ui-lg-6 ui-md-2">Producer's Name</label>
-        <input type="text" class="form-control" [value]="list?.producer" disabled>
+    <div class="form-group">
+      <div class="ui-g">
+        <label class="ui-g-4">Year of release</label>
+        <input type="text" class="ui-g-4" [value]="list?.release_date" disabled>
       </div>
     </div>
 
-    <div class="ui-lg-12 ui-md-4">
-      <div class="form-group">
-        <label class="ui-lg-6 ui-md-2">Year of release</label>
-        <input type="text" class="form-control" [value]="list?.release_date" disabled>
+    <div class="form-group">
+      <div class="ui-g">
+        <label class="ui-g-4">Ratings</label>
+        <input type="text" class="ui-g-4" [value]="list?.rt_score" disabled>
       </div>
     </div>
 
-    <div class="ui-lg-12 ui-md-4">
-      <div class="form-group">
-        <label class="ui-lg-6 ui-md-2">Ratings</label>
-        <input type="text" class="form-control" [value]="list?.rt_score" disabled>
+    <div class="form-group">
+      <div class="ui-g">
+        <label class="ui-g-4">Summary</label>
+        <textarea [rows]="5" [cols]="36" pInputTextarea autoResize="autoResize" [value]="list?.description"
+          disabled></textarea>
       </div>
     </div>
   </div>

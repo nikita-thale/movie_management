@@ -11,7 +11,7 @@
         </ng-template>
         <ng-template pTemplate="body" let-movie>
             <tr>
-                <td><a (click)="showDetail(movie)">{{movie.title}}</a></td>
+                <td (click)="showDetail(movie)">{{movie.title}}</td>
                 <td>{{movie.director}}</td>
                 <td>{{movie.rt_score}}</td>
             </tr>
