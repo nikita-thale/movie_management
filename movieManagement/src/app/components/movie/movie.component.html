@@ -1,0 +1,23 @@
+<div class="movie-container">
+  <div class="ui-g">
+    <div class="ui-g-12">
+      <p-table [value]="movies" [rows]="10" [paginator]="true" [responsive]="true" autoLayout ="true">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Movie Title</th>
+                <th>Director's Name</th>
+                <th>Ratings</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-movie>
+            <tr>
+                <td><a (click)="showDetail(movie)">{{movie.title}}</a></td>
+                <td>{{movie.director}}</td>
+                <td>{{movie.rt_score}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+    <app-movie-detail [display]="display" [list]="list" (displayChange)="onDialogClose($event)"></app-movie-detail>
+    </div>
+  </div>
+</div>
