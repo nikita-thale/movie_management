@@ -6,6 +6,7 @@ import { MovieComponent } from './movie.component';
 import { MovieService } from './movie.service';
 import {TableModule} from 'primeng/table';
 import { MovieDetailModule } from '../movie-detail/movie-detail.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   { path: '', component: MovieComponent },
